@@ -134,7 +134,7 @@ op setCertificateIssuer is KeyVaultOperation<
      */
     #suppress "deprecated" "Property flattening is supported for legacy scenarios like Key Vault's"
     @body
-    @flattenProperty
+    @Azure.ClientGenerator.Core.Legacy.flattenProperty
     parameter: CertificateIssuerSetParameters;
   },
   IssuerBundle
@@ -161,7 +161,7 @@ op updateCertificateIssuer is KeyVaultOperation<
      */
     #suppress "deprecated" "Property flattening is supported for legacy scenarios like Key Vault's"
     @body
-    @flattenProperty
+    @Azure.ClientGenerator.Core.Legacy.flattenProperty
     parameter: CertificateIssuerUpdateParameters;
   },
   IssuerBundle
@@ -227,7 +227,7 @@ op createCertificate is KeyVaultOperation<
      */
     #suppress "deprecated" "Property flattening is supported for legacy scenarios like Key Vault's"
     @body
-    @flattenProperty
+    @Azure.ClientGenerator.Core.Legacy.flattenProperty
     parameters: CertificateCreateParameters;
   },
   AcceptedResponse & CertificateOperation
@@ -255,7 +255,7 @@ op importCertificate is KeyVaultOperation<
      */
     #suppress "deprecated" "Property flattening is supported for legacy scenarios like Key Vault's"
     @body
-    @flattenProperty
+    @Azure.ClientGenerator.Core.Legacy.flattenProperty
     parameters: CertificateImportParameters;
   },
   CertificateBundle
@@ -360,7 +360,7 @@ op updateCertificate is KeyVaultOperation<
      */
     #suppress "deprecated" "Property flattening is supported for legacy scenarios like Key Vault's"
     @body
-    @flattenProperty
+    @Azure.ClientGenerator.Core.Legacy.flattenProperty
     parameters: CertificateUpdateParameters;
   },
   CertificateBundle
@@ -413,7 +413,7 @@ op updateCertificateOperation is KeyVaultOperation<
      */
     #suppress "deprecated" "Property flattening is supported for legacy scenarios like Key Vault's"
     @body
-    @flattenProperty
+    @Azure.ClientGenerator.Core.Legacy.flattenProperty
     certificateOperation: CertificateOperationUpdateParameter;
   },
   CertificateOperation
@@ -478,7 +478,7 @@ op mergeCertificate is KeyVaultOperation<
      */
     #suppress "deprecated" "Property flattening is supported for legacy scenarios like Key Vault's"
     @body
-    @flattenProperty
+    @Azure.ClientGenerator.Core.Legacy.flattenProperty
     parameters: CertificateMergeParameters;
   },
   CreatedResponse & CertificateBundle
@@ -517,7 +517,7 @@ op restoreCertificate is KeyVaultOperation<
      */
     #suppress "deprecated" "Property flattening is supported for legacy scenarios like Key Vault's"
     @body
-    @flattenProperty
+    @Azure.ClientGenerator.Core.Legacy.flattenProperty
     parameters: CertificateRestoreParameters;
   },
   CertificateBundle

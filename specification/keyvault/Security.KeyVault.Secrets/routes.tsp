@@ -32,7 +32,7 @@ op setSecret is KeyVaultOperation<
      */
     #suppress "deprecated" "Property flattening is supported for legacy scenarios like Key Vault's"
     @body
-    @flattenProperty
+    @Azure.ClientGenerator.Core.Legacy.flattenProperty
     parameters: SecretSetParameters;
   },
   SecretBundle
@@ -85,7 +85,7 @@ op updateSecret is KeyVaultOperation<
      */
     #suppress "deprecated" "Property flattening is supported for legacy scenarios like Key Vault's"
     @body
-    @flattenProperty
+    @Azure.ClientGenerator.Core.Legacy.flattenProperty
     parameters: SecretUpdateParameters;
   },
   SecretBundle
@@ -278,7 +278,7 @@ op restoreSecret is KeyVaultOperation<
      */
     #suppress "deprecated" "Property flattening is supported for legacy scenarios like Key Vault's"
     @body
-    @flattenProperty
+    @Azure.ClientGenerator.Core.Legacy.flattenProperty
     parameters: SecretRestoreParameters;
   },
   SecretBundle
