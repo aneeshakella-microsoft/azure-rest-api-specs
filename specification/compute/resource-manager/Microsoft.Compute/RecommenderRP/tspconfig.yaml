@@ -30,8 +30,8 @@ options:
     service-name: "Compute Recommender"
     flavor: azure
   "@azure-tools/typespec-ts":
-    service-dir: "sdk/compute"
-    emitter-output-dir: "{output-dir}/{service-dir}/arm-computerecommender"
+    service-dir: "{output-dir}/sdk/compute"
+    emitter-output-dir: "{service-dir}/arm-computerecommender"
     flavor: azure
     experimental-extensible-enums: true
     package-details:
